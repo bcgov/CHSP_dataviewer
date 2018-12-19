@@ -39,11 +39,6 @@ library(tidyverse)
 library(stringr)
 library(glue)
 
-# monthly data series
-library(lubridate)
-# extending ggplot2
-library(scales)
-
 # cansim
 #install.packages("devtools")
 #devtools::install_github("mountainmath/cansim")
@@ -59,9 +54,7 @@ library(cansim)
 
 ---
 
-## Background
-
-
+## Get the data
 
 
 
@@ -77,6 +70,21 @@ CHSP_data_CDN <- get_cansim("46-10-0018-01")
 
 ```
 
+### some preliminary wrangling
+
+_Necessary to streamline filtering and selecting_
+
+Add level of geography: GEO_level
+
+* province (PROV), Census Metropolitan Area (CMA), Census Subdivision--includes municipalities (CSD)
+
+Add province flag (GEO_prov)
+
+* 12 = Nova Scotia
+
+* 35 = Ontario
+
+* 59 = British Columbia
 
 ```{r}
 
