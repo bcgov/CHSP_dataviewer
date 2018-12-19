@@ -20,7 +20,7 @@ The data presented here are tailored for users in British Columbia.
 
 ## Scripts
 
-[Preliminary pull and wrangle](scr\housing_residency_status.Rmd)
+[Preliminary pull and wrangle](scr/housing_residency_status.Rmd)
 
 
 ---
