@@ -27,6 +27,10 @@ The data presented here are tailored for users in British Columbia.
 
 ## Statistics Canada reference materials
 
+[Canadian Housing Statistics Program, 2018](https://www150.statcan.gc.ca/n1/daily-quotidien/181211/dq181211b-eng.htm): from _The Daily_, 2018-12-11
+
+Program page: [Canadian Housing Statistics Program (CHSP)](http://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&SDDS=5257)
+
 
 ### data
 
