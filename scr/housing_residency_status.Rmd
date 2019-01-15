@@ -38,6 +38,7 @@ library(tidyverse)
 #library(dplyr)
 library(stringr)
 library(glue)
+library(feather)
 
 # cansim
 #install.packages("devtools")
@@ -63,13 +64,30 @@ library(cansim)
 This script uses the [R package `cansim`](https://github.com/mountainMath/cansim)
 
 
-```{r data_read}
 
-CHSP_data_CDN <- get_cansim("46-10-0018-01")
+read from CANSIM
+
+```{r data_read_01}
+
+CHSP_data_CDN_source <- get_cansim("46-10-0018-01")
+
+write_feather(CHSP_data_CDN_source, "../data/CHSP_data_CDN_source.feather")
 
 
 ```
 
+
+read from previously downloaded file
+
+```{r data_read_02}
+
+CHSP_data_CDN <- read_feather("../data/CHSP_data_CDN_source.feather")
+
+                              
+```
+                              
+                              
+                              
 ### some preliminary wrangling
 
 _Necessary to streamline filtering and selecting_
@@ -180,6 +198,9 @@ CHSP_data_CDN %>%
 CHSP_data_CDN %>%
   group_by(GEO_prov) %>%
   tally()
+
+
+write_feather(CHSP_data_CDN, "../data/CHSP_data_CDN.feather")
 
 ```
 
