@@ -213,7 +213,7 @@ unique(housing_data_BC_all$GeoUID)
 
 
 ```{r}
-housing_data_BC %>%
+housing_data_BC_all %>%
   filter(Estimates == "Median assessment value",
          `Residency status` != "Total, all residency status categories") %>%
   select(GEO, `Property type`, `Period of construction`, `Residency status`,
