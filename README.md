@@ -7,6 +7,7 @@ To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0
 -->
 
 [![img](https://img.shields.io/badge/Lifecycle-Experimental-339999)]
+[![status: archive](https://github.com/GIScience/badges/raw/master/status/archive.svg)](https://github.com/GIScience/badges#archive)
 
 ---
 
